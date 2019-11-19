@@ -6,7 +6,7 @@ import lombok.Setter;
 
 /**
  * @ClassName @{NAME}
- * @Description TODO 区块 每一个区块不仅包含前一个区块的hash值，同时包含自身的一个hash值，自身的hash值是通过之前的hash值和数据date通过hash计算出来的
+ * @Description TODO 区块 每一个区块不仅包含前一个区块的hash值，同时包含自身的一个hash值，自身的hash值是通过之前的hash值+时间戳+随机数+数据date通过hash计算出来的
  * @Author Administrator
  * @Date 2019/11/19 10:15
  * @Version 1.0

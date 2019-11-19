@@ -2,10 +2,13 @@ package com.chain.util;
 
 import com.chain.model.Block;
 import com.chain.model.NodeChain;
+import org.apache.tomcat.util.codec.binary.StringUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.security.PublicKey;
+import java.util.Base64;
 import java.util.List;
 
 /**
@@ -73,6 +76,17 @@ public class BlockChainUtil {
             }
         }
         return true;
+    }
+
+    /**
+     * @Author hhl
+     * @Description //TODO 公钥转字符串
+     * @Date 15:52 2019/11/19
+     * @Param [key]
+     * @return java.lang.String
+     **/
+    public  static  String  getStringFromKey(PublicKey key){
+        return Base64.getEncoder().encodeToString(key.getEncoded());
     }
 
 }
