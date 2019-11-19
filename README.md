@@ -4,3 +4,5 @@
 >NodeChain.java 区块链 维护一个数组，和难度系数。
 
 >BlockChainUtil.java 1、创建数字签名 2、检查区块链的完整性
+
+>Wallet.java 钱包 采用KeyPair 生成密钥对作为公钥（地址）和私有（密码）
